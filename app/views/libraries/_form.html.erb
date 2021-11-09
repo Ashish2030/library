@@ -26,7 +26,19 @@
     <%= form.number_field :price %>
   </div>
 
-  <div class="actions">
+  
+  <br>
+
+	ADD INFO<br><%= form.text_area :message, size: "40x4" %><br>	
+	<br>PUBLISH DATE<br><%= form.date_field :pub_date %><br>
+	<br>ENTER YOUR EMAIL<br>	<%= form.email_field :address %><br>
+	<br>ENTER MOBILE NO.<br>	<%= form.telephone_field :phone %><br>
+	<br>CHOOSE A PACKAGE GIFT WRAP COLOR<br>	<%= form.color_field :color %><br>
+
+
+<br>
+<div class="actions">
     <%= form.submit %>
   </div>
-<% end %>
+  <% end %>
+  <br>

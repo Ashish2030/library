@@ -15,5 +15,31 @@
   <%= @library.price %>
 </p>
 
-<%= link_to 'Edit', edit_library_path(@library),class:"btn btn-outline-secondary" %> |
-<%= link_to 'Back', libraries_path ,class:"btn btn-outline-secondary"%>
+<p>
+  <strong>Message:</strong>
+  <%= @library.message %>
+</p>
+
+<p>
+  <strong>Published Date:</strong>
+  <%= @library.pub_date %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @library.address %>
+</p>
+
+
+<p>
+  <strong>Phone:</strong>
+  <%= @library.phone %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @library.color %>
+</p>
+
+<%= link_to 'Edit', edit_library_path(@library) %> |
+<%= link_to 'Back', libraries_path %>
